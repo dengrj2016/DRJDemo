@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ThreeVC.h
 //  DRJTableViewDemo
 //
 //  Created by Afmobi on 16/7/18.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SelectorVC.h"
 
-@interface ViewController : UIViewController
-
+@interface ThreeVC : UIViewController<SelectDeletage>
 
 @end
-
