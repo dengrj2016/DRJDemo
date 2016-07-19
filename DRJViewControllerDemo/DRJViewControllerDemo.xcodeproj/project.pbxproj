@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F059FAF1D3DC59E00D61D21 /* IndexVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F059FAE1D3DC59E00D61D21 /* IndexVC.m */; };
 		9758A6671D3DC06300D30D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9758A6661D3DC06300D30D24 /* main.m */; };
 		9758A66A1D3DC06300D30D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9758A6691D3DC06300D30D24 /* AppDelegate.m */; };
-		9758A66D1D3DC06400D30D24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9758A66C1D3DC06400D30D24 /* ViewController.m */; };
 		9758A6701D3DC06400D30D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9758A66E1D3DC06400D30D24 /* Main.storyboard */; };
 		9758A6721D3DC06400D30D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9758A6711D3DC06400D30D24 /* Assets.xcassets */; };
 		9758A6751D3DC06400D30D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9758A6731D3DC06400D30D24 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F059FAD1D3DC59E00D61D21 /* IndexVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexVC.h; sourceTree = "<group>"; };
+		5F059FAE1D3DC59E00D61D21 /* IndexVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexVC.m; sourceTree = "<group>"; };
 		9758A6621D3DC06300D30D24 /* DRJViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRJViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9758A6661D3DC06300D30D24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9758A6681D3DC06300D30D24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9758A6691D3DC06300D30D24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9758A66B1D3DC06400D30D24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9758A66C1D3DC06400D30D24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9758A66F1D3DC06400D30D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9758A6711D3DC06400D30D24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9758A6741D3DC06400D30D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,8 +60,8 @@
 			children = (
 				9758A6681D3DC06300D30D24 /* AppDelegate.h */,
 				9758A6691D3DC06300D30D24 /* AppDelegate.m */,
-				9758A66B1D3DC06400D30D24 /* ViewController.h */,
-				9758A66C1D3DC06400D30D24 /* ViewController.m */,
+				5F059FAD1D3DC59E00D61D21 /* IndexVC.h */,
+				5F059FAE1D3DC59E00D61D21 /* IndexVC.m */,
 				9758A66E1D3DC06400D30D24 /* Main.storyboard */,
 				9758A6711D3DC06400D30D24 /* Assets.xcassets */,
 				9758A6731D3DC06400D30D24 /* LaunchScreen.storyboard */,
@@ -149,7 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9758A66D1D3DC06400D30D24 /* ViewController.m in Sources */,
+				5F059FAF1D3DC59E00D61D21 /* IndexVC.m in Sources */,
 				9758A66A1D3DC06300D30D24 /* AppDelegate.m in Sources */,
 				9758A6671D3DC06300D30D24 /* main.m in Sources */,
 			);
@@ -214,7 +214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -252,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -264,6 +264,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DRJViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Afmobi.DRJViewControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +276,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DRJViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Afmobi.DRJViewControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +302,7 @@
 				9758A67B1D3DC06400D30D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
