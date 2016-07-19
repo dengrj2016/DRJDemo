@@ -13,6 +13,10 @@
 		9758A6701D3DC06400D30D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9758A66E1D3DC06400D30D24 /* Main.storyboard */; };
 		9758A6721D3DC06400D30D24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9758A6711D3DC06400D30D24 /* Assets.xcassets */; };
 		9758A6751D3DC06400D30D24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9758A6731D3DC06400D30D24 /* LaunchScreen.storyboard */; };
+		9758A6A71D3E203400D30D24 /* StoryboardVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9758A6A61D3E203400D30D24 /* StoryboardVC.storyboard */; };
+		9758A6AC1D3E23BB00D30D24 /* XibVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9758A6AA1D3E23BB00D30D24 /* XibVC.m */; };
+		9758A6AD1D3E23BB00D30D24 /* XibVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9758A6AB1D3E23BB00D30D24 /* XibVC.xib */; };
+		9758A6B11D3E256300D30D24 /* CodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9758A6B01D3E256300D30D24 /* CodeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		9758A6711D3DC06400D30D24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9758A6741D3DC06400D30D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9758A6761D3DC06400D30D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9758A6A61D3E203400D30D24 /* StoryboardVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardVC.storyboard; sourceTree = "<group>"; };
+		9758A6A91D3E23BB00D30D24 /* XibVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibVC.h; sourceTree = "<group>"; };
+		9758A6AA1D3E23BB00D30D24 /* XibVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibVC.m; sourceTree = "<group>"; };
+		9758A6AB1D3E23BB00D30D24 /* XibVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibVC.xib; sourceTree = "<group>"; };
+		9758A6AF1D3E256300D30D24 /* CodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeVC.h; sourceTree = "<group>"; };
+		9758A6B01D3E256300D30D24 /* CodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,9 @@
 		9758A6641D3DC06300D30D24 /* DRJViewControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9758A6AE1D3E253B00D30D24 /* CodeVC */,
+				9758A6A81D3E22A300D30D24 /* Xib */,
+				9758A6A51D3E200E00D30D24 /* Storyboard */,
 				9758A6681D3DC06300D30D24 /* AppDelegate.h */,
 				9758A6691D3DC06300D30D24 /* AppDelegate.m */,
 				5F059FAD1D3DC59E00D61D21 /* IndexVC.h */,
@@ -77,6 +90,33 @@
 				9758A6661D3DC06300D30D24 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9758A6A51D3E200E00D30D24 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9758A6A61D3E203400D30D24 /* StoryboardVC.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		9758A6A81D3E22A300D30D24 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				9758A6A91D3E23BB00D30D24 /* XibVC.h */,
+				9758A6AA1D3E23BB00D30D24 /* XibVC.m */,
+				9758A6AB1D3E23BB00D30D24 /* XibVC.xib */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		9758A6AE1D3E253B00D30D24 /* CodeVC */ = {
+			isa = PBXGroup;
+			children = (
+				9758A6AF1D3E256300D30D24 /* CodeVC.h */,
+				9758A6B01D3E256300D30D24 /* CodeVC.m */,
+			);
+			name = CodeVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +176,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9758A6A71D3E203400D30D24 /* StoryboardVC.storyboard in Resources */,
 				9758A6751D3DC06400D30D24 /* LaunchScreen.storyboard in Resources */,
+				9758A6AD1D3E23BB00D30D24 /* XibVC.xib in Resources */,
 				9758A6721D3DC06400D30D24 /* Assets.xcassets in Resources */,
 				9758A6701D3DC06400D30D24 /* Main.storyboard in Resources */,
 			);
@@ -151,6 +193,8 @@
 			files = (
 				5F059FAF1D3DC59E00D61D21 /* IndexVC.m in Sources */,
 				9758A66A1D3DC06300D30D24 /* AppDelegate.m in Sources */,
+				9758A6AC1D3E23BB00D30D24 /* XibVC.m in Sources */,
+				9758A6B11D3E256300D30D24 /* CodeVC.m in Sources */,
 				9758A6671D3DC06300D30D24 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

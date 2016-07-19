@@ -43,7 +43,7 @@
             </objects>
             <point key="canvasLocation" x="-32" y="351.21333333333331"/>
         </scene>
-        <!--Main View ControllerVC-->
+        <!--MainViewVC-->
         <scene sceneID="8zB-ba-7vF">
             <objects>
                 <viewController id="wVO-cP-5zf" customClass="MainViewControllerVC" sceneMemberID="viewController">
@@ -101,7 +101,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="5ix-Hx-gaJ" secondAttribute="trailing" id="ywP-7g-TFj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1mQ-eR-rT0"/>
+                    <navigationItem key="navigationItem" title="MainViewVC" id="1mQ-eR-rT0"/>
                     <connections>
                         <outlet property="tableView" destination="5ix-Hx-gaJ" id="ODb-89-jK0"/>
                     </connections>

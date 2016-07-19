@@ -7,6 +7,8 @@
 //
 
 #import "IndexVC.h"
+#import "XibVC.h"
+#import "CodeVC.h"
 
 @interface IndexVC () <UITableViewDelegate, UITableViewDataSource>
 
@@ -55,7 +57,17 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    
+    if (indexPath.row == 0) {
+        UIStoryboard *storyBoard=[UIStoryboard storyboardWithName:@"StoryboardVC" bundle:nil];
+        UIViewController *controller=[storyBoard instantiateViewControllerWithIdentifier:@"storyBoardVC"];
+        [self.navigationController pushViewController:controller animated:YES];
+    }else if (indexPath.row == 1) {
+        XibVC *vc=[[XibVC alloc] initWithNibName:@"XibVC" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 2) {
+        CodeVC *vc=[[CodeVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
