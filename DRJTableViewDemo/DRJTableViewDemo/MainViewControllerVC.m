@@ -6,21 +6,21 @@
 //  Copyright © 2016年 Afmobi. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "ViewControllerDemo1.h"
-#import "SingleSelector.h"
+#import "MainViewControllerVC.h"
+#import "DelegateVC.h"
+#import "SingleSelectorVC.h"
 #import "MutableSelectorVC.h"
 #import "SectionsVC.h"
 #import "EditVC.h"
 
-@interface MainViewController ()
+@interface MainViewControllerVC ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
 @end
 
-@implementation MainViewController
+@implementation MainViewControllerVC
 //UINavigationController *navigation;
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,23 +41,32 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *TableSampleIdentifier = @"TableSampleIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableSampleIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:TableSampleIdentifier];
-    }
-    
+//    static NSString *TableSampleIdentifier = @"TableSampleIdentifier";
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableSampleIdentifier];
+//    
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:TableSampleIdentifier];
+//    }
+    NSString *identifier=@"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    UILabel *label=[cell viewWithTag:101];
+    label.text=@"storyboardCell";
+    UILabel *title=[cell viewWithTag:100];
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"Demo0";
+//        cell.textLabel.text = @"Delegate";
+        title.text= @"Delegate";
     }else if (indexPath.row == 1) {
-        cell.textLabel.text = @"SingleSelector";
+//        cell.textLabel.text = @"SingleSelector";
+        title.text = @"SingleSelector";
     }else if (indexPath.row == 2) {
-        cell.textLabel.text = @"MutableSelector";
+//        cell.textLabel.text = @"MutableSelector";
+        title.text = @"MutableSelector";
     }else if (indexPath.row==3){
-        cell.textLabel.text=@"Sections";
+//        cell.textLabel.text=@"Sections";
+        title.text=@"Sections";
     }else if(indexPath.row==4){
-        cell.textLabel.text=@"EditVC";
+//        cell.textLabel.text=@"Edit";
+        title.text=@"Edit";
     }
     
     return cell;
@@ -69,12 +78,12 @@
     
     switch (indexPath.row) {
         case 0: {
-            ViewControllerDemo1 *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Demo1VC"];
+            DelegateVC *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Demo1VC"];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 1: {
-            SingleSelector *vc = [[SingleSelector alloc] init];
+            SingleSelectorVC *vc = [[SingleSelectorVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SingleSelector : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface SingleSelectorVC : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

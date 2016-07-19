@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9758A6A21D3DFDBD00D30D24 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9758A6A11D3DFDBD00D30D24 /* CustomCell.m */; };
+		9758A6A41D3E12E400D30D24 /* XibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9758A6A31D3E12E400D30D24 /* XibCell.xib */; };
 		97B8A1991D3CB2E500C4064C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A1981D3CB2E500C4064C /* main.m */; };
 		97B8A19C1D3CB2E500C4064C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A19B1D3CB2E500C4064C /* AppDelegate.m */; };
-		97B8A19F1D3CB2E500C4064C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A19E1D3CB2E500C4064C /* MainViewController.m */; };
+		97B8A19F1D3CB2E500C4064C /* MainViewControllerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A19E1D3CB2E500C4064C /* MainViewControllerVC.m */; };
 		97B8A1A21D3CB2E500C4064C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B8A1A01D3CB2E500C4064C /* Main.storyboard */; };
 		97B8A1A41D3CB2E500C4064C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B8A1A31D3CB2E500C4064C /* Assets.xcassets */; };
 		97B8A1A71D3CB2E500C4064C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97B8A1A51D3CB2E500C4064C /* LaunchScreen.storyboard */; };
-		97B8A1B01D3CB77300C4064C /* ViewControllerDemo1.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A1AF1D3CB77300C4064C /* ViewControllerDemo1.m */; };
+		97B8A1B01D3CB77300C4064C /* DelegateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A1AF1D3CB77300C4064C /* DelegateVC.m */; };
 		97B8A1B31D3CB7D000C4064C /* ThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A1B21D3CB7D000C4064C /* ThreeVC.m */; };
 		97B8A1B61D3CB81F00C4064C /* SelectorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A1B51D3CB81F00C4064C /* SelectorVC.m */; };
-		97B8A1B91D3CB8A000C4064C /* SingleSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A1B81D3CB8A000C4064C /* SingleSelector.m */; };
+		97B8A1B91D3CB8A000C4064C /* SingleSelectorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A1B81D3CB8A000C4064C /* SingleSelectorVC.m */; };
 		97B8A1BC1D3CB90000C4064C /* MutableSelectorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A1BB1D3CB90000C4064C /* MutableSelectorVC.m */; };
 		97B8A1BF1D3CB9A100C4064C /* SectionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A1BE1D3CB9A100C4064C /* SectionsVC.m */; };
 		97B8A1C31D3CB9FA00C4064C /* EditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B8A1C11D3CB9FA00C4064C /* EditVC.m */; };
@@ -25,24 +27,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9758A6A01D3DFDBD00D30D24 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		9758A6A11D3DFDBD00D30D24 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		9758A6A31D3E12E400D30D24 /* XibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibCell.xib; sourceTree = "<group>"; };
 		97B8A1941D3CB2E400C4064C /* DRJTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRJTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B8A1981D3CB2E500C4064C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97B8A19A1D3CB2E500C4064C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		97B8A19B1D3CB2E500C4064C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		97B8A19D1D3CB2E500C4064C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		97B8A19E1D3CB2E500C4064C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		97B8A19D1D3CB2E500C4064C /* MainViewControllerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewControllerVC.h; sourceTree = "<group>"; };
+		97B8A19E1D3CB2E500C4064C /* MainViewControllerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerVC.m; sourceTree = "<group>"; };
 		97B8A1A11D3CB2E500C4064C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97B8A1A31D3CB2E500C4064C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97B8A1A61D3CB2E500C4064C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97B8A1A81D3CB2E500C4064C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97B8A1AE1D3CB77300C4064C /* ViewControllerDemo1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDemo1.h; sourceTree = "<group>"; };
-		97B8A1AF1D3CB77300C4064C /* ViewControllerDemo1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerDemo1.m; sourceTree = "<group>"; };
+		97B8A1AE1D3CB77300C4064C /* DelegateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateVC.h; sourceTree = "<group>"; };
+		97B8A1AF1D3CB77300C4064C /* DelegateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateVC.m; sourceTree = "<group>"; };
 		97B8A1B11D3CB7D000C4064C /* ThreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeVC.h; sourceTree = "<group>"; };
 		97B8A1B21D3CB7D000C4064C /* ThreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeVC.m; sourceTree = "<group>"; };
 		97B8A1B41D3CB81F00C4064C /* SelectorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectorVC.h; sourceTree = "<group>"; };
 		97B8A1B51D3CB81F00C4064C /* SelectorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectorVC.m; sourceTree = "<group>"; };
-		97B8A1B71D3CB8A000C4064C /* SingleSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleSelector.h; sourceTree = "<group>"; };
-		97B8A1B81D3CB8A000C4064C /* SingleSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleSelector.m; sourceTree = "<group>"; };
+		97B8A1B71D3CB8A000C4064C /* SingleSelectorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleSelectorVC.h; sourceTree = "<group>"; };
+		97B8A1B81D3CB8A000C4064C /* SingleSelectorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleSelectorVC.m; sourceTree = "<group>"; };
 		97B8A1BA1D3CB90000C4064C /* MutableSelectorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableSelectorVC.h; sourceTree = "<group>"; };
 		97B8A1BB1D3CB90000C4064C /* MutableSelectorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableSelectorVC.m; sourceTree = "<group>"; };
 		97B8A1BD1D3CB9A100C4064C /* SectionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionsVC.h; sourceTree = "<group>"; };
@@ -64,6 +69,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9758A69F1D3DCEC100D30D24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9758A6A01D3DFDBD00D30D24 /* CustomCell.h */,
+				9758A6A11D3DFDBD00D30D24 /* CustomCell.m */,
+				9758A6A31D3E12E400D30D24 /* XibCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		97B8A18B1D3CB2E400C4064C = {
 			isa = PBXGroup;
 			children = (
@@ -83,23 +98,24 @@
 		97B8A1961D3CB2E500C4064C /* DRJTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9758A69F1D3DCEC100D30D24 /* Views */,
 				97B8A19A1D3CB2E500C4064C /* AppDelegate.h */,
 				97B8A19B1D3CB2E500C4064C /* AppDelegate.m */,
-				97B8A19D1D3CB2E500C4064C /* MainViewController.h */,
-				97B8A19E1D3CB2E500C4064C /* MainViewController.m */,
+				97B8A19D1D3CB2E500C4064C /* MainViewControllerVC.h */,
+				97B8A19E1D3CB2E500C4064C /* MainViewControllerVC.m */,
 				97B8A1A01D3CB2E500C4064C /* Main.storyboard */,
 				97B8A1A31D3CB2E500C4064C /* Assets.xcassets */,
 				97B8A1A51D3CB2E500C4064C /* LaunchScreen.storyboard */,
 				97B8A1A81D3CB2E500C4064C /* Info.plist */,
 				97B8A1971D3CB2E500C4064C /* Supporting Files */,
-				97B8A1AE1D3CB77300C4064C /* ViewControllerDemo1.h */,
-				97B8A1AF1D3CB77300C4064C /* ViewControllerDemo1.m */,
+				97B8A1AE1D3CB77300C4064C /* DelegateVC.h */,
+				97B8A1AF1D3CB77300C4064C /* DelegateVC.m */,
 				97B8A1B11D3CB7D000C4064C /* ThreeVC.h */,
 				97B8A1B21D3CB7D000C4064C /* ThreeVC.m */,
 				97B8A1B41D3CB81F00C4064C /* SelectorVC.h */,
 				97B8A1B51D3CB81F00C4064C /* SelectorVC.m */,
-				97B8A1B71D3CB8A000C4064C /* SingleSelector.h */,
-				97B8A1B81D3CB8A000C4064C /* SingleSelector.m */,
+				97B8A1B71D3CB8A000C4064C /* SingleSelectorVC.h */,
+				97B8A1B81D3CB8A000C4064C /* SingleSelectorVC.m */,
 				97B8A1BA1D3CB90000C4064C /* MutableSelectorVC.h */,
 				97B8A1BB1D3CB90000C4064C /* MutableSelectorVC.m */,
 				97B8A1BD1D3CB9A100C4064C /* SectionsVC.h */,
@@ -180,6 +196,7 @@
 				97B8A1C61D3CC64F00C4064C /* SelectorVC.xib in Resources */,
 				97B8A1A71D3CB2E500C4064C /* LaunchScreen.storyboard in Resources */,
 				97B8A1A41D3CB2E500C4064C /* Assets.xcassets in Resources */,
+				9758A6A41D3E12E400D30D24 /* XibCell.xib in Resources */,
 				97B8A1C41D3CB9FA00C4064C /* EditVC.xib in Resources */,
 				97B8A1A21D3CB2E500C4064C /* Main.storyboard in Resources */,
 			);
@@ -193,11 +210,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				97B8A1B31D3CB7D000C4064C /* ThreeVC.m in Sources */,
-				97B8A19F1D3CB2E500C4064C /* MainViewController.m in Sources */,
+				97B8A19F1D3CB2E500C4064C /* MainViewControllerVC.m in Sources */,
 				97B8A1BC1D3CB90000C4064C /* MutableSelectorVC.m in Sources */,
-				97B8A1B91D3CB8A000C4064C /* SingleSelector.m in Sources */,
-				97B8A1B01D3CB77300C4064C /* ViewControllerDemo1.m in Sources */,
+				97B8A1B91D3CB8A000C4064C /* SingleSelectorVC.m in Sources */,
+				97B8A1B01D3CB77300C4064C /* DelegateVC.m in Sources */,
 				97B8A1B61D3CB81F00C4064C /* SelectorVC.m in Sources */,
+				9758A6A21D3DFDBD00D30D24 /* CustomCell.m in Sources */,
 				97B8A19C1D3CB2E500C4064C /* AppDelegate.m in Sources */,
 				97B8A1991D3CB2E500C4064C /* main.m in Sources */,
 				97B8A1C31D3CB9FA00C4064C /* EditVC.m in Sources */,
@@ -352,6 +370,7 @@
 				97B8A1AD1D3CB2E500C4064C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

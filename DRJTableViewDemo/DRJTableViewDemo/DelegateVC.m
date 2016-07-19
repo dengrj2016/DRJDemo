@@ -6,15 +6,15 @@
 //  Copyright © 2016年 Afmobi. All rights reserved.
 //
 
-#import "ViewControllerDemo1.h"
+#import "DelegateVC.h"
 #import "ThreeVC.h"
 
 
-@interface ViewControllerDemo1 ()
+@interface DelegateVC ()
 
 @end
 
-@implementation ViewControllerDemo1
+@implementation DelegateVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];

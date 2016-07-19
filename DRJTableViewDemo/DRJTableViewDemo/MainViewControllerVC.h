@@ -1,5 +1,5 @@
 //
-//  ViewControllerDemo1.h
+//  ViewController.h
 //  DRJTableViewDemo
 //
 //  Created by Afmobi on 16/7/18.
@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewControllerDemo1 : UIViewController
+@interface MainViewControllerVC : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+
 
 @end
+
+
+

@@ -23,11 +23,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.table=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-20) style:UITableViewStylePlain];
+    self.table=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-64) style:UITableViewStylePlain];
     self.table.delegate=self;
     self.table.dataSource=self;
     [self.view addSubview:self.table];
-    self.array=@[@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天"];
+//    self.array=@[@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天",@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天"];
+    self.array=[[UIFont familyNames] copy];
     self.arrayIndexs=[[NSMutableArray alloc] init];
     
 }
@@ -46,13 +47,23 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *TableSampleIdentifier = @"SingleSelector";
+    static BOOL isRegist=NO;
+    if (!isRegist) {
+        UINib *nib=[UINib nibWithNibName:@"XibCell" bundle:nil];
+        [tableView registerNib:nib forCellReuseIdentifier:TableSampleIdentifier];
+        isRegist=YES;
+    }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableSampleIdentifier];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:TableSampleIdentifier];
-    }
-    //    for (int i=0; i<array.count; i++) {
-    cell.textLabel.text=[self.array objectAtIndex:indexPath.row];
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:TableSampleIdentifier];
+//    }
+    UILabel *title=[cell viewWithTag:201];
+    title.text=[self.array objectAtIndex:indexPath.row];
+    UILabel *content=[cell viewWithTag:202];
+    NSString *row=[NSString stringWithFormat:@"CustomCell  %ld",indexPath.row];
+    content.text=row;
+//    cell.textLabel.text=[self.array objectAtIndex:indexPath.row];
     if ([self.arrayIndexs indexOfObject:indexPath ]!= NSNotFound) {
         // 选中操作
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -60,9 +71,6 @@
         // 取消前一个选中的
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
-    
-    
-    //    }
     /**
      这里是默认选中
      if (lastIndex == indexPath.row) {
