@@ -21,6 +21,8 @@
 		97A19E751D40C8460096BAC8 /* KvoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A19E731D40C8460096BAC8 /* KvoVC.m */; };
 		97A19E761D40C8460096BAC8 /* KvoVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A19E741D40C8460096BAC8 /* KvoVC.storyboard */; };
 		97A19E791D40C8670096BAC8 /* Pruduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A19E781D40C8670096BAC8 /* Pruduct.m */; };
+		97A19E811D40D9A90096BAC8 /* ProtocolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A19E801D40D9A90096BAC8 /* ProtocolVC.m */; };
+		97A19E831D40D9BD0096BAC8 /* ProtocolVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A19E821D40D9BD0096BAC8 /* ProtocolVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,9 @@
 		97A19E741D40C8460096BAC8 /* KvoVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KvoVC.storyboard; sourceTree = "<group>"; };
 		97A19E771D40C8670096BAC8 /* Pruduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pruduct.h; sourceTree = "<group>"; };
 		97A19E781D40C8670096BAC8 /* Pruduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pruduct.m; sourceTree = "<group>"; };
+		97A19E7F1D40D9A90096BAC8 /* ProtocolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolVC.h; sourceTree = "<group>"; };
+		97A19E801D40D9A90096BAC8 /* ProtocolVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolVC.m; sourceTree = "<group>"; };
+		97A19E821D40D9BD0096BAC8 /* ProtocolVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProtocolVC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +143,7 @@
 		97A19E701D40C8460096BAC8 /* KVO */ = {
 			isa = PBXGroup;
 			children = (
+				97A19E7E1D40D98D0096BAC8 /* ProtocolVC */,
 				97A19E711D40C8460096BAC8 /* KvoVC */,
 				97A19E771D40C8670096BAC8 /* Pruduct.h */,
 				97A19E781D40C8670096BAC8 /* Pruduct.m */,
@@ -153,6 +159,16 @@
 				97A19E741D40C8460096BAC8 /* KvoVC.storyboard */,
 			);
 			path = KvoVC;
+			sourceTree = "<group>";
+		};
+		97A19E7E1D40D98D0096BAC8 /* ProtocolVC */ = {
+			isa = PBXGroup;
+			children = (
+				97A19E7F1D40D9A90096BAC8 /* ProtocolVC.h */,
+				97A19E801D40D9A90096BAC8 /* ProtocolVC.m */,
+				97A19E821D40D9BD0096BAC8 /* ProtocolVC.storyboard */,
+			);
+			path = ProtocolVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +231,7 @@
 				972339FF1D406FEE00F6F380 /* LaunchScreen.storyboard in Resources */,
 				97A19E761D40C8460096BAC8 /* KvoVC.storyboard in Resources */,
 				972339FC1D406FEE00F6F380 /* Assets.xcassets in Resources */,
+				97A19E831D40D9BD0096BAC8 /* ProtocolVC.storyboard in Resources */,
 				972339FA1D406FEE00F6F380 /* Main.storyboard in Resources */,
 				97A19E671D40C40F0096BAC8 /* CategoryVC.storyboard in Resources */,
 			);
@@ -229,6 +246,7 @@
 			files = (
 				97A19E681D40C40F0096BAC8 /* IndexObjectCVC.m in Sources */,
 				972339F71D406FEE00F6F380 /* IndexVC.m in Sources */,
+				97A19E811D40D9A90096BAC8 /* ProtocolVC.m in Sources */,
 				97A19E641D40C40F0096BAC8 /* BaseClass+Category.m in Sources */,
 				97A19E791D40C8670096BAC8 /* Pruduct.m in Sources */,
 				97A19E751D40C8460096BAC8 /* KvoVC.m in Sources */,

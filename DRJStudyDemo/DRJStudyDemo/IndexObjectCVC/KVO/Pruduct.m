@@ -8,6 +8,13 @@
 
 #import "Pruduct.h"
 
+static id instance=nil;
 @implementation Pruduct
 
++(id)getInstance{
+    if (!instance) {
+        instance=[[super alloc] init];
+    }
+    return instance;
+}
 @end

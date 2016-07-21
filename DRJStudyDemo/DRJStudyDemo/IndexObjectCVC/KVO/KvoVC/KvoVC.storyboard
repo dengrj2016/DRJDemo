@@ -36,7 +36,14 @@
                                     <action selector="changePrice:" destination="jzF-Sr-YLs" eventType="touchUpInside" id="fhI-TF-BF7"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XYr-oj-dEc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcv-wC-B0y">
+                                <rect key="frame" x="12" y="48" width="127" height="30"/>
+                                <state key="normal" title="Select Pruduct"/>
+                                <connections>
+                                    <action selector="changePruduct:" destination="jzF-Sr-YLs" eventType="touchUpInside" id="UNY-J5-Zb7"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XYr-oj-dEc">
                                 <rect key="frame" x="159" y="48" width="133" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -46,6 +53,7 @@
                     </view>
                     <connections>
                         <outlet property="input" destination="XYr-oj-dEc" id="JU0-NK-661"/>
+                        <outlet property="nameLabel" destination="DnD-5G-bub" id="9eH-NO-Ibj"/>
                         <outlet property="priceLabel" destination="kh0-5e-Pgx" id="OlP-hv-ha9"/>
                     </connections>
                 </viewController>

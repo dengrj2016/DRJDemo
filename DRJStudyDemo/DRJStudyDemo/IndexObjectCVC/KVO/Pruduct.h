@@ -11,4 +11,6 @@
 @interface Pruduct : NSObject
 @property(nonatomic,copy)NSString *name;
 @property(nonatomic,assign)int price;
+
++(id)getInstance;
 @end
