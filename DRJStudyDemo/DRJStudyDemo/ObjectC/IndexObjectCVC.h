@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IndexObjectCVC.h
 //  DRJStudyDemo
 //
 //  Created by Afmobi on 16/7/21.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IndexVC : UIViewController<UITableViewDelegate,UITableViewDataSource>
-
+@interface IndexObjectCVC : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end
-
