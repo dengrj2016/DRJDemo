@@ -13,6 +13,7 @@
 		5F059FBB1D3DCBFB00D61D21 /* AutolayoutMultiplierVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F059FBA1D3DCBFB00D61D21 /* AutolayoutMultiplierVC.m */; };
 		5F059FBE1D3DCC2F00D61D21 /* CodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F059FBD1D3DCC2F00D61D21 /* CodeVC.m */; };
 		5F059FC11D3DCCB400D61D21 /* AutolayoutCommonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F059FC01D3DCCB300D61D21 /* AutolayoutCommonVC.m */; };
+		971F33E81D3F9278002AF5EC /* CodeVC+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 971F33E71D3F9278002AF5EC /* CodeVC+Test.m */; };
 		9758A68A1D3DC39500D30D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9758A6891D3DC39500D30D24 /* main.m */; };
 		9758A68D1D3DC39500D30D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9758A68C1D3DC39500D30D24 /* AppDelegate.m */; };
 		9758A6931D3DC39500D30D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9758A6911D3DC39500D30D24 /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 		5F059FBD1D3DCC2F00D61D21 /* CodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeVC.m; sourceTree = "<group>"; };
 		5F059FBF1D3DCCB300D61D21 /* AutolayoutCommonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutolayoutCommonVC.h; sourceTree = "<group>"; };
 		5F059FC01D3DCCB300D61D21 /* AutolayoutCommonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutolayoutCommonVC.m; sourceTree = "<group>"; };
+		971F33E61D3F9278002AF5EC /* CodeVC+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CodeVC+Test.h"; sourceTree = "<group>"; };
+		971F33E71D3F9278002AF5EC /* CodeVC+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CodeVC+Test.m"; sourceTree = "<group>"; };
 		9758A6851D3DC39500D30D24 /* DRJScreenAdaptationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRJScreenAdaptationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9758A6891D3DC39500D30D24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9758A68B1D3DC39500D30D24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				9758A68B1D3DC39500D30D24 /* AppDelegate.h */,
+				971F33E61D3F9278002AF5EC /* CodeVC+Test.h */,
+				971F33E71D3F9278002AF5EC /* CodeVC+Test.m */,
 				9758A68C1D3DC39500D30D24 /* AppDelegate.m */,
 				5F059FB01D3DC8D700D61D21 /* IndexVC.h */,
 				5F059FB11D3DC8D700D61D21 /* IndexVC.m */,
@@ -175,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F059FC11D3DCCB400D61D21 /* AutolayoutCommonVC.m in Sources */,
+				971F33E81D3F9278002AF5EC /* CodeVC+Test.m in Sources */,
 				5F059FB21D3DC8D700D61D21 /* IndexVC.m in Sources */,
 				5F059FB51D3DCB7300D61D21 /* AutolayoutSubviewsVC.m in Sources */,
 				9758A68D1D3DC39500D30D24 /* AppDelegate.m in Sources */,
