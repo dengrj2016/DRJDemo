@@ -13,6 +13,8 @@
 @interface CategoryVC ()
 @property(strong,nonatomic) IBOutlet UILabel*titleLabel;
 @property(strong,nonatomic) IBOutlet UILabel*contextLabel;
+//@property(strong,nonatomic) NSString *str;
+//@property(strong,nonatomic) NSString *_str;
 @end
 
 @implementation CategoryVC
@@ -24,6 +26,9 @@
     BaseClass *cate=[[BaseClass alloc] init];
     [cate add:self.contextLabel];
     [cate setText:self.titleLabel];
+    [self setValue:@"222" forKey:@"str"];
+    NSLog(@"str->%@",self->str);
+    NSLog(@"_str->%@",self->_str);
 }
 
 -(void)viewDidLayoutSubviews{

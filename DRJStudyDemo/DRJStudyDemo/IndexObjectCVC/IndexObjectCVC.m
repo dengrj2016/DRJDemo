@@ -8,6 +8,7 @@
 
 #import "IndexObjectCVC.h"
 #import "CategoryVC.h"
+#include "KVO/KvoVC/KvoVC.h"
 
 @interface IndexObjectCVC ()
 @property(strong,nonatomic) UITableView *table;
@@ -36,7 +37,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return 2;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -47,6 +48,8 @@
     }
     if (indexPath.row==0) {
         cell.textLabel.text=@"Category";
+    }else if (indexPath.row==1){
+        cell.textLabel.text=@"KVO";
     }
     return cell;
 }
@@ -55,6 +58,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row==0) {
         UIStoryboard *storyBoard=[UIStoryboard storyboardWithName:@"CategoryVC" bundle:nil];
+        UIViewController *vc=[storyBoard instantiateInitialViewController];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row){
+        UIStoryboard *storyBoard=[UIStoryboard storyboardWithName:@"KvoVC" bundle:nil];
         UIViewController *vc=[storyBoard instantiateInitialViewController];
         [self.navigationController pushViewController:vc animated:YES];
     }

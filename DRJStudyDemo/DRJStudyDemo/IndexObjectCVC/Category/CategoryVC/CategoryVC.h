@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CategoryVC : UIViewController
+@interface CategoryVC : UIViewController{
+    NSString *str;
+    NSString *_str;
+}
 
 @end
