@@ -35,7 +35,8 @@
 -(IBAction)changePrice:(id)sender{
     NSString *inputText=self.input.text;
     if (inputText!=nil && inputText.length>0) {
-        self.pruduct.price=[inputText intValue];
+//        self.pruduct.price=[inputText intValue];
+        [self.pruduct setValue:[NSNumber numberWithInt:[inputText intValue]] forKey:@"price"];
         [self.input resignFirstResponder];
         self.input.text=@"";
     }
