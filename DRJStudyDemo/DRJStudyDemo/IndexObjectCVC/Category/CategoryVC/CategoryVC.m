@@ -27,8 +27,8 @@
     [cate add:self.contextLabel];
     [cate setText:self.titleLabel];
     [self setValue:@"222" forKey:@"str"];
-    NSLog(@"str->%@",self->str);
-    NSLog(@"_str->%@",self->_str);
+    NSLog(@"str->%@",str);
+    NSLog(@"_str->%@",_str);
 }
 
 -(void)viewDidLayoutSubviews{

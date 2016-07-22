@@ -21,7 +21,7 @@
 
 @implementation KvoVC
 
--(void)viewDidLoad{
+- (void)viewDidLoad{
     [super viewDidLoad];
     self.pruduct = [Pruduct getInstance];// [[Pruduct alloc]init];
     self.pruduct.price=0;
@@ -32,7 +32,7 @@
     self.priceLabel.text=str;
 }
 
--(IBAction)changePrice:(id)sender{
+- (IBAction)changePrice:(id)sender{
     NSString *inputText=self.input.text;
     if (inputText!=nil && inputText.length>0) {
 //        self.pruduct.price=[inputText intValue];
@@ -42,13 +42,13 @@
     }
 }
 
--(IBAction)changePruduct:(id)sender{
+- (IBAction)changePruduct:(id)sender{
     UIStoryboard *storyBoard=[UIStoryboard storyboardWithName:@"ProtocolVC" bundle:nil];
     UIViewController *vc=[storyBoard instantiateInitialViewController];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
     if ([keyPath isEqualToString:@"price"]) {
         NSString *str=[NSString stringWithFormat:@"%d",self.pruduct.price];
 //            [self.priceLabel setValue:str forKey:self.priceLabel.text];
@@ -64,5 +64,6 @@
 {
 //    [super dealloc];
     [self.pruduct removeObserver:self forKeyPath:@"price"];
+    [self.pruduct removeObserver:self forKeyPath:@"name"];
 }
 @end

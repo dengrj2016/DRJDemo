@@ -35,8 +35,8 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1lh-do-XdJ">
-                                <rect key="frame" x="40" y="160" width="240" height="128"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1lh-do-XdJ">
+                                <rect key="frame" x="16" y="0.0" width="288" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="C4x-GZ-kDF" id="ZIs-7F-Y2E"/>
@@ -46,10 +46,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1lh-do-XdJ" firstAttribute="top" secondItem="1HE-L3-qsO" secondAttribute="bottom" id="2nL-lV-BeR"/>
-                            <constraint firstItem="1lh-do-XdJ" firstAttribute="leading" secondItem="BxB-GO-Z2e" secondAttribute="leadingMargin" id="94n-lp-8Xv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1lh-do-XdJ" secondAttribute="trailing" id="IqS-Nl-i1b"/>
-                            <constraint firstItem="Vaj-kq-GhZ" firstAttribute="top" secondItem="1lh-do-XdJ" secondAttribute="bottom" id="ag8-K9-9hb"/>
+                            <constraint firstItem="1lh-do-XdJ" firstAttribute="leading" secondItem="BxB-GO-Z2e" secondAttribute="leadingMargin" id="4MW-ZB-BnX"/>
+                            <constraint firstItem="Vaj-kq-GhZ" firstAttribute="top" secondItem="1lh-do-XdJ" secondAttribute="bottom" id="JKz-s9-bLI"/>
+                            <constraint firstItem="1lh-do-XdJ" firstAttribute="top" secondItem="1HE-L3-qsO" secondAttribute="bottom" id="ch9-sG-8QP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1lh-do-XdJ" secondAttribute="trailing" id="fRO-OQ-hZb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Index" id="jrP-PO-GYm"/>
