@@ -8,6 +8,7 @@
 
 #import "IndexVC.h"
 #import "IndexObjectCVC.h"
+#import "NotificationVC/NotificationVC.h"
 
 @interface IndexVC ()
 @property(strong,nonatomic) IBOutlet UITableView *table;
@@ -26,7 +27,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return 2;
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
@@ -41,6 +42,8 @@
     }
     if (indexPath.row==0) {
         cell.textLabel.text=@"Object-c";
+    }else if (indexPath.row==1){
+        cell.textLabel.text=@"Notification";
     }
     return cell;
 }
@@ -50,6 +53,11 @@
     switch (indexPath.row) {
         case 0:{
             IndexObjectCVC *vc=[[IndexObjectCVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 1:{
+            NotificationVC *vc=[[NotificationVC alloc] initWithNibName:@"NotificationVC" bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

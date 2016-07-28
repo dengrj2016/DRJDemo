@@ -13,13 +13,15 @@
 		972339FA1D406FEE00F6F380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972339F81D406FEE00F6F380 /* Main.storyboard */; };
 		972339FC1D406FEE00F6F380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 972339FB1D406FEE00F6F380 /* Assets.xcassets */; };
 		972339FF1D406FEE00F6F380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972339FD1D406FEE00F6F380 /* LaunchScreen.storyboard */; };
+		976E0DF01D499DDC00A8D7CE /* NotificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 976E0DEE1D499DDC00A8D7CE /* NotificationVC.m */; };
+		976E0DF11D499DDC00A8D7CE /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 976E0DEF1D499DDC00A8D7CE /* NotificationVC.xib */; };
 		97A19E641D40C40F0096BAC8 /* BaseClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A19E5B1D40C40F0096BAC8 /* BaseClass+Category.m */; };
 		97A19E651D40C40F0096BAC8 /* BaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A19E5D1D40C40F0096BAC8 /* BaseClass.m */; };
 		97A19E661D40C40F0096BAC8 /* CategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A19E601D40C40F0096BAC8 /* CategoryVC.m */; };
 		97A19E671D40C40F0096BAC8 /* CategoryVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A19E611D40C40F0096BAC8 /* CategoryVC.storyboard */; };
 		97A19E681D40C40F0096BAC8 /* IndexObjectCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A19E631D40C40F0096BAC8 /* IndexObjectCVC.m */; };
-		97A19E751D40C8460096BAC8 /* KvoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A19E731D40C8460096BAC8 /* KvoVC.m */; };
-		97A19E761D40C8460096BAC8 /* KvoVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A19E741D40C8460096BAC8 /* KvoVC.storyboard */; };
+		97A19E751D40C8460096BAC8 /* KVOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A19E731D40C8460096BAC8 /* KVOVC.m */; };
+		97A19E761D40C8460096BAC8 /* KVOVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A19E741D40C8460096BAC8 /* KVOVC.storyboard */; };
 		97A19E791D40C8670096BAC8 /* Pruduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A19E781D40C8670096BAC8 /* Pruduct.m */; };
 		97A19E811D40D9A90096BAC8 /* ProtocolVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A19E801D40D9A90096BAC8 /* ProtocolVC.m */; };
 		97A19E831D40D9BD0096BAC8 /* ProtocolVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A19E821D40D9BD0096BAC8 /* ProtocolVC.storyboard */; };
@@ -36,6 +38,9 @@
 		972339FB1D406FEE00F6F380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		972339FE1D406FEE00F6F380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97233A001D406FEE00F6F380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		976E0DED1D499DDC00A8D7CE /* NotificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationVC.h; sourceTree = "<group>"; };
+		976E0DEE1D499DDC00A8D7CE /* NotificationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationVC.m; sourceTree = "<group>"; };
+		976E0DEF1D499DDC00A8D7CE /* NotificationVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
 		97A19E5A1D40C40F0096BAC8 /* BaseClass+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseClass+Category.h"; sourceTree = "<group>"; };
 		97A19E5B1D40C40F0096BAC8 /* BaseClass+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseClass+Category.m"; sourceTree = "<group>"; };
 		97A19E5C1D40C40F0096BAC8 /* BaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseClass.h; sourceTree = "<group>"; };
@@ -45,9 +50,9 @@
 		97A19E611D40C40F0096BAC8 /* CategoryVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CategoryVC.storyboard; sourceTree = "<group>"; };
 		97A19E621D40C40F0096BAC8 /* IndexObjectCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexObjectCVC.h; sourceTree = "<group>"; };
 		97A19E631D40C40F0096BAC8 /* IndexObjectCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexObjectCVC.m; sourceTree = "<group>"; };
-		97A19E721D40C8460096BAC8 /* KvoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KvoVC.h; sourceTree = "<group>"; };
-		97A19E731D40C8460096BAC8 /* KvoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KvoVC.m; sourceTree = "<group>"; };
-		97A19E741D40C8460096BAC8 /* KvoVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KvoVC.storyboard; sourceTree = "<group>"; };
+		97A19E721D40C8460096BAC8 /* KVOVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOVC.h; sourceTree = "<group>"; };
+		97A19E731D40C8460096BAC8 /* KVOVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOVC.m; sourceTree = "<group>"; };
+		97A19E741D40C8460096BAC8 /* KVOVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KVOVC.storyboard; sourceTree = "<group>"; };
 		97A19E771D40C8670096BAC8 /* Pruduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pruduct.h; sourceTree = "<group>"; };
 		97A19E781D40C8670096BAC8 /* Pruduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pruduct.m; sourceTree = "<group>"; };
 		97A19E7F1D40D9A90096BAC8 /* ProtocolVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolVC.h; sourceTree = "<group>"; };
@@ -85,6 +90,7 @@
 		972339EE1D406FEE00F6F380 /* DRJStudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				976E0DEC1D499AA100A8D7CE /* NotificationVC */,
 				97A19E581D40C40F0096BAC8 /* IndexObjectCVC */,
 				972339F21D406FEE00F6F380 /* AppDelegate.h */,
 				972339F31D406FEE00F6F380 /* AppDelegate.m */,
@@ -105,6 +111,16 @@
 				972339F01D406FEE00F6F380 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		976E0DEC1D499AA100A8D7CE /* NotificationVC */ = {
+			isa = PBXGroup;
+			children = (
+				976E0DED1D499DDC00A8D7CE /* NotificationVC.h */,
+				976E0DEE1D499DDC00A8D7CE /* NotificationVC.m */,
+				976E0DEF1D499DDC00A8D7CE /* NotificationVC.xib */,
+			);
+			path = NotificationVC;
 			sourceTree = "<group>";
 		};
 		97A19E581D40C40F0096BAC8 /* IndexObjectCVC */ = {
@@ -154,9 +170,9 @@
 		97A19E711D40C8460096BAC8 /* KvoVC */ = {
 			isa = PBXGroup;
 			children = (
-				97A19E721D40C8460096BAC8 /* KvoVC.h */,
-				97A19E731D40C8460096BAC8 /* KvoVC.m */,
-				97A19E741D40C8460096BAC8 /* KvoVC.storyboard */,
+				97A19E721D40C8460096BAC8 /* KVOVC.h */,
+				97A19E731D40C8460096BAC8 /* KVOVC.m */,
+				97A19E741D40C8460096BAC8 /* KVOVC.storyboard */,
 			);
 			path = KvoVC;
 			sourceTree = "<group>";
@@ -229,8 +245,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				972339FF1D406FEE00F6F380 /* LaunchScreen.storyboard in Resources */,
-				97A19E761D40C8460096BAC8 /* KvoVC.storyboard in Resources */,
+				97A19E761D40C8460096BAC8 /* KVOVC.storyboard in Resources */,
 				972339FC1D406FEE00F6F380 /* Assets.xcassets in Resources */,
+				976E0DF11D499DDC00A8D7CE /* NotificationVC.xib in Resources */,
 				97A19E831D40D9BD0096BAC8 /* ProtocolVC.storyboard in Resources */,
 				972339FA1D406FEE00F6F380 /* Main.storyboard in Resources */,
 				97A19E671D40C40F0096BAC8 /* CategoryVC.storyboard in Resources */,
@@ -245,11 +262,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A19E681D40C40F0096BAC8 /* IndexObjectCVC.m in Sources */,
+				976E0DF01D499DDC00A8D7CE /* NotificationVC.m in Sources */,
 				972339F71D406FEE00F6F380 /* IndexVC.m in Sources */,
 				97A19E811D40D9A90096BAC8 /* ProtocolVC.m in Sources */,
 				97A19E641D40C40F0096BAC8 /* BaseClass+Category.m in Sources */,
 				97A19E791D40C8670096BAC8 /* Pruduct.m in Sources */,
-				97A19E751D40C8460096BAC8 /* KvoVC.m in Sources */,
+				97A19E751D40C8460096BAC8 /* KVOVC.m in Sources */,
 				972339F41D406FEE00F6F380 /* AppDelegate.m in Sources */,
 				97A19E651D40C40F0096BAC8 /* BaseClass.m in Sources */,
 				97A19E661D40C40F0096BAC8 /* CategoryVC.m in Sources */,

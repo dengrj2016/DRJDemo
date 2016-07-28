@@ -61,7 +61,7 @@
         UIViewController *vc=[storyBoard instantiateInitialViewController];
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row){
-        UIStoryboard *storyBoard=[UIStoryboard storyboardWithName:@"KvoVC" bundle:nil];
+        UIStoryboard *storyBoard=[UIStoryboard storyboardWithName:@"KVOVC" bundle:nil];
         UIViewController *vc=[storyBoard instantiateInitialViewController];
         [self.navigationController pushViewController:vc animated:YES];
     }
