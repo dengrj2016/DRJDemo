@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @property (weak, nonatomic) IBOutlet UIButton *beginButton;
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @property(nonatomic,strong) NSNotificationCenter *center;
 @property(strong,nonatomic) NSOperationQueue *queue;
@@ -48,7 +49,7 @@
         for(int i=0;i<100;i++){
             [NSThread sleepForTimeInterval:0.01];
 //            progStatus+=1;
-            NSNotification *noti=[NSNotification notificationWithName:PROGRESS_CHANGE object:nil userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:++progStatus],@"prog", nil]];
+            NSNotification *noti=[NSNotification notificationWithName:PROGRESS_CHANGE object:[NSNumber numberWithInt:i] userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:++progStatus],@"prog", nil]];
             [self.center postNotification:noti];
         }
     }];
@@ -58,11 +59,14 @@
 
 - (void)update:(NSNotification *)noti{
     NSNumber *progStatus=noti.userInfo[@"prog"];
+    NSNumber *title=[noti object];
     dispatch_async(dispatch_get_main_queue(), ^{
         self.progressView.progress = progStatus.intValue/100.0;// progress是float类型，右边也必须是float
         NSLog(@"progStatus.intValue=%d----self.progressView.progress=%f",progStatus.intValue,self.progressView.progress);
         NSString *str=[NSString stringWithFormat:@"%f",self.progressView.progress];
         [self.label setText:str];
+        NSString *titleStr=[NSString stringWithFormat:@"progress %d",title.intValue];
+        [self.titleLabel setText:titleStr];
         if (progStatus.intValue==100) {
             [self.beginButton setEnabled:YES];
         }

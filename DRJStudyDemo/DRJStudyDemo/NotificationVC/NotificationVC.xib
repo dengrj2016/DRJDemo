@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="beginButton" destination="if3-eq-30F" id="6uY-d3-d4W"/>
                 <outlet property="progressView" destination="DIa-aL-a2c" id="RlQ-JN-kUZ"/>
+                <outlet property="titleLabel" destination="Myd-hG-NCb" id="5xJ-BJ-T17"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
