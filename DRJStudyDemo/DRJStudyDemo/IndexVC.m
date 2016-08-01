@@ -9,6 +9,8 @@
 #import "IndexVC.h"
 #import "IndexObjectCVC.h"
 #import "NotificationVC/NotificationVC.h"
+#import "ScrollViewVC.h"
+#import "TextFieldVC.h"
 
 @interface IndexVC ()
 @property(strong,nonatomic) IBOutlet UITableView *table;
@@ -27,7 +29,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    return 4;
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
@@ -44,6 +46,10 @@
         cell.textLabel.text=@"Object-c";
     }else if (indexPath.row==1){
         cell.textLabel.text=@"Notification";
+    }else if (indexPath.row==2){
+        cell.textLabel.text=@"UIScrollView";
+    }else if (indexPath.row==3){
+        cell.textLabel.text=@"TextFieldVC+数值回传";
     }
     return cell;
 }
@@ -58,6 +64,16 @@
         }
         case 1:{
             NotificationVC *vc=[[NotificationVC alloc] initWithNibName:@"NotificationVC" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 2:{
+            ScrollViewVC *vc=[[ScrollViewVC alloc] initWithNibName:@"ScrollViewVC" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 3:{
+            TextFieldVC *vc=[[TextFieldVC alloc] initWithNibName:@"TextFieldVC" bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

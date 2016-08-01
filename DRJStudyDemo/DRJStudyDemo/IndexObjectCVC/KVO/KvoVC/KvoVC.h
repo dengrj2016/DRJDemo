@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KvoVC : UIViewController
+@interface KVOVC : UIViewController
 
 @end

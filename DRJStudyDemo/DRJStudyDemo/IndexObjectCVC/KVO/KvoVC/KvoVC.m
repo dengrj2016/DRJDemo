@@ -6,11 +6,11 @@
 //  Copyright © 2016年 Afmobi. All rights reserved.
 //
 
-#import "KvoVC.h"
+#import "KVOVC.h"
 #import "Pruduct.h"
 #import "ProtocolVC.h"
 
-@interface KvoVC()
+@interface KVOVC()
 @property (weak, nonatomic) IBOutlet UITextField *input;
 @property(strong,nonatomic)IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
@@ -19,7 +19,7 @@
 @property (strong, nonatomic) Pruduct *pruduct;
 @end
 
-@implementation KvoVC
+@implementation KVOVC
 
 - (void)viewDidLoad{
     [super viewDidLoad];
