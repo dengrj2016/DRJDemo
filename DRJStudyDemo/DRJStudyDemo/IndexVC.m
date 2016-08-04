@@ -11,6 +11,8 @@
 #import "NotificationVC/NotificationVC.h"
 #import "ScrollViewVC.h"
 #import "TextFieldVC.h"
+#import "ImageViewVC.h"
+#import "CustomLoadingVC.h"
 
 @interface IndexVC ()
 @property(strong,nonatomic) IBOutlet UITableView *table;
@@ -29,7 +31,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 4;
+    return 6;
 }
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
@@ -50,6 +52,10 @@
         cell.textLabel.text=@"UIScrollView";
     }else if (indexPath.row==3){
         cell.textLabel.text=@"TextFieldVC+数值回传";
+    }else if (indexPath.row==4){
+        cell.textLabel.text=@"ImageView";
+    }else if(indexPath.row==5){
+        cell.textLabel.text=@"CustomLoading";
     }
     return cell;
 }
@@ -74,6 +80,16 @@
         }
         case 3:{
             TextFieldVC *vc=[[TextFieldVC alloc] initWithNibName:@"TextFieldVC" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 4:{
+            ImageViewVC *vc=[[ImageViewVC alloc] initWithNibName:@"ImageViewVC" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 5:{
+            CustomLoadingVC *vc=[[CustomLoadingVC alloc] initWithNibName:@"CustomLoadingVC" bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }

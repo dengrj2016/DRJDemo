@@ -63,22 +63,27 @@
 - (IBAction)actionDelegate:(id)sender{
     DelegateVC *vc=[[DelegateVC alloc] initWithNibName:@"DelegateVC" bundle:nil];
     vc.delegate=self;
-    vc.type=DELEGATE;
+    vc.type=TYPE_DELEGATE;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (IBAction)actionNotification:(id)sender{
     DelegateVC *vc=[[DelegateVC alloc] initWithNibName:@"DelegateVC" bundle:nil];
-    vc.type=NOTIFICATION;
+    vc.type=TYPE_NOTIFICATION;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (IBAction)actionBlock:(id)sender{
     DelegateVC *vc=[[DelegateVC alloc] initWithNibName:@"DelegateVC" bundle:nil];
-    [vc returnText:^(NSString *str1,NSString *str2){
-        [self.text1 setText:str1];
-        [self.text2 setText:str2];
-    }];
+    //    [vc returnText:^(NSString *str1,NSString *str2){
+    //        [self.text1 setText:str1];
+    //        [self.text2 setText:str2];
+    //    }];
+    vc.type = TYPE_BLOCK;
+    vc.returnBlock = ^(NSString *first,NSString *second){
+        [self.text1 setText:first];
+        [self.text2 setText:second];
+    };
     [self presentViewController:vc animated:YES completion:nil];
 }
 
